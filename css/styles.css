@@ -93,9 +93,21 @@ img {
   display: flex;
   align-items: flex-start;
   gap: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
-.head-list-item {
+.head-list-item-now {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-list-item-now::after {
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--pressed-state);
+  content: "";
 }
 
 .head-list-link {
@@ -107,6 +119,10 @@ img {
   letter-spacing: 0.02em;
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.head-list-link-now {
+  color: var(--pressed-state);
 }
 
 .head-list-link:focus,
