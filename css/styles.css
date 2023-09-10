@@ -343,6 +343,10 @@ img {
   padding: 12px;
 }
 
+.social-bg:hover, .social-bg:focus {
+  background: var(--pressed-state)
+}
+
 .social-icon {
   width: 16px;
   height: 16px;
@@ -399,8 +403,6 @@ img {
 .contacts {
   background: var(--dark);
   padding: 100px 0;
-  display: flex;
-  flex-direction: column;
 }
 
 .logo-down {
