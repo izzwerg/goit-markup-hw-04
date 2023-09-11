@@ -443,9 +443,7 @@ img {
 }
 
 .portfolio-overlay {
-  padding-top: 40px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 40px 32px;
   background-color: var(--primary-brand);
   color: var(--light);
   font-size: 16px;
