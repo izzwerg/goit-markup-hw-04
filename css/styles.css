@@ -57,6 +57,9 @@ img {
   margin-right: auto;
   display: flex;
   justify-content: center;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .head-all {
@@ -103,6 +106,7 @@ img {
 .head-list-item-now {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .head-list-item-now::after {
@@ -111,6 +115,9 @@ img {
   border-radius: 2px;
   background: var(--pressed-state);
   content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
 }
 
 .head-list-link {
@@ -182,6 +189,10 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  max-width: 1440px;
 }
 
 .hero-title {
@@ -214,12 +225,12 @@ img {
   font-family: 'Roboto', sans-serif;
   background: var(--primary-brand);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
 .hero-button:focus {
-  background: var(--pressed-state);
+  background-color: var(--pressed-state);
 }
 
 .visually-hidden {
@@ -252,11 +263,14 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  height: 112px;
+  background-color: var(--light);
 }
 
 .benefits-list-logo {
-  width: 64px;
-  height: 64px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -388,8 +402,8 @@ img {
 
 .portfolio-list-item:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-  0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-  0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list-info {
