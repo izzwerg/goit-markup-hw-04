@@ -352,6 +352,7 @@ img {
 .team-list-social {
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 
 .social-bg {
